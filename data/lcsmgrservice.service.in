@@ -1,0 +1,11 @@
+[Unit]
+Description=license manager service
+
+[Service]
+Type=dbus
+BusName=org.freedesktop.LcsMgrService
+ExecStart=@lcsmgrserviceprivdir@/lcsmgrserviced
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target

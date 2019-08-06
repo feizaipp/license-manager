@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<node name="/">
+  <interface name="org.freedesktop.LcsMgrService.Base">
+    <method name="GetFeedback">
+      <arg name="md5" type="s" direction="out" />
+    </method>
+    <method name="InsertLicense">
+      <arg name="path" type="s" direction="in" />
+      <arg name="ret" type="i" direction="out" />
+    </method>
+    <method name="CheckLicense">
+      <arg name="ret" type="i" direction="out" />
+    </method>
+  </interface>
+</node>

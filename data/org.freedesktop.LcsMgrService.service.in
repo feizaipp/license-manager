@@ -1,0 +1,7 @@
+[D-BUS Service]
+Name=org.freedesktop.LcsMgrService
+Exec=@lcsmgrserviceprivdir@/lcsmgrserviced
+User=root
+SystemdService=lcsmgrservice.service
+StandardOutput=syslog
+StandardError=syslog
